@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+
+        let lab = parseFloat(prompt("Digite a nota do laboratório"))
+        let sem = parseFloat(prompt("Digite a nota da avaliação semestral"))
+        let exam = parseFloat(prompt("Digite a nota do exame final"))
+        let resultado = (((lab * 2) + (sem * 3) + (exam * 5))/10)
+        
+        if (resultado >= 0 && resultado <= 4.9 ) {
+            alert("Voce tirou E")
+        }
+        else if (resultado >= 5 && resultado <= 5.9 ) {
+            alert("Voce tirou D")
+        }
+        else if (resultado >= 6 && resultado <= 6.9 ) {
+            alert("Voce tirou C")
+        }
+        else if (resultado >= 7 && resultado <= 7.9 ) {
+          alert("Voce tirou B")
+        }
+        else {alert("Voce tirou A")} 
+        
+    </script>
+</body>
+</html>

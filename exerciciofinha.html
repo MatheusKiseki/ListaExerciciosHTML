@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio finha</title>
+  </head>
+  <body>
+    <script>
+      let valortotalcompra = parseFloat(
+        prompt("Qual o valor total da compra?")
+      );
+
+      let opcoes = prompt(
+        "ESCOLHA UMA DAS OPÇÕES: a vista\ncheque predatado para 30 dias\nparcelado em 3x\nparcelado em 6x\nparcelado em 12x"
+      ).toLowerCase();
+
+      if (opcoes == "a vista") {
+        let resultadovista = (valortotalcompra * 75) / 100;
+        console.log(
+          `o resultado da sua compra já com desconto de 15% será ${resultadovista}`
+        );
+      } else if (opcoes == "cheque predatado para 30 dias") {
+        let resultadocheque = (valortotalcompra * 90) / 100;
+        console.log(
+          `o resultado da sua compra já com desconto de 10% será ${resultadocheque}`
+        );
+      } else if (opcoes == "parcelado em 3x") {
+        let resultadop3 = (valortotalcompra * 95) / 100;
+        let valorparcela = resultadop3 / 3;
+        console.log(
+          `o resultado da sua compra já com desconto de 5% será ${resultadop3}`
+        );
+        console.log(`o valor de cada parcela é ${valorparcela.toFixed(2)}`);
+      } else if (opcoes == "parcelado em 6x") {
+        console.log(valortotalcompra);
+        let valorparcela6 = valortotalcompra / 6;
+        console.log(`o valor de cada parcela será ${valorparcela6.toFixed(2)}`);
+      } else if (opcoes == "parcelado em 12x") {
+        let resultadop12 = valortotalcompra + (valortotalcompra * 8) / 100;
+        let valorparcela12 = resultadop12 / 12;
+        console.log(
+          `o resultado da sua compra já com acréscimo será ${resultadop12}`
+        );
+        console.log(
+          `o valor de cada parcela será ${valorparcela12.toFixed(2)}`
+        );
+      }
+    </script>
+  </body>
+</html>

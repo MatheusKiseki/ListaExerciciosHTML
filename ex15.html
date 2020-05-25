@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 15</title>
+  </head>
+  <body>
+    <script>
+      let num1 = parseFloat(prompt("Digite a primeira nota"));
+      let num2 = parseFloat(prompt("Digite a segunda nota"));
+      let num3 = parseFloat(prompt("Digite a terceira nota"));
+      let num4 = parseFloat(prompt("Digite o numero de faltas"));
+
+      if (num4 > 20) {
+        console.log("voce repetiu por falta");
+      } else if ((num1 + num2 + num3) / 3 < 7) {
+        console.log("VOCE REPETIU POR NOTA MLK BURRO");
+      } else {
+        console.log("VOCE APROVOU NAO FEZ MAIS QUE OBRIGAÇÃO");
+      }
+    </script>
+  </body>
+</html>
